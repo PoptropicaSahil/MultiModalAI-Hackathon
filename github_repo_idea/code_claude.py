@@ -18,6 +18,7 @@ global index
 openai_api_key = os.getenv("OPENAI_API_KEY")
 active_loop_token = os.getenv("ACTIVELOOP_TOKEN")
 dataset_path = os.getenv("DATASET_PATH")
+openai.api_key = "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"
 
 
 st.set_page_config(
@@ -27,7 +28,7 @@ st.set_page_config(
     initial_sidebar_state="auto",
     menu_items=None,
 )
-openai.api_key = "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"
+
 st.title("Chat about any Github repository, powered by LlamaIndex 💬🦙")
 st.info(
     "Made by Aditri, Sahil and Arya",
