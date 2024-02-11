@@ -98,7 +98,7 @@ def load_data():
                 owner=owner,
                 repo=repo,
                 filter_file_extensions=(
-                    [".py", ".js", ".ts", ".md"],
+                    [".py", ".js", ".ts", ".md", ".pdf"],
                     GithubRepositoryReader.FilterType.INCLUDE,
                 ),
                 verbose=False,
