@@ -14,6 +14,8 @@ Utilize this tool to understand GitHub repos efficiently. You can ask for summar
 7) Install dependencies in  `pip install -r requirements.txt`
 8) Run the file! `streamlit run main.py`
 
-
-
 Made by Aditri, Arya and Sahil
+
+⚠ Note 
+- The landing page of the streamlit UI might show an `UnboundLocalError`. However, the app remains completely functional - simply enter the github repo url and chat with it!
+- The API Keys in the .env file will be automatically terminated in a week.
