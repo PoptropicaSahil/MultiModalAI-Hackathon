@@ -1,7 +1,6 @@
 import os
 import re
 
-import openai
 import streamlit as st
 from dotenv import load_dotenv
 from llama_hub.github_repo import GithubClient, GithubRepositoryReader
@@ -18,8 +17,6 @@ global index
 openai_api_key = os.getenv("OPENAI_API_KEY")
 active_loop_token = os.getenv("ACTIVELOOP_TOKEN")
 dataset_path = os.getenv("DATASET_PATH")
-openai.api_key = "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"
-
 
 st.set_page_config(
     page_title="Chat with the Streamlit docs, powered by LlamaIndex",
@@ -92,7 +89,7 @@ def load_data():
     ):
         # if st.button("Submit"):
         owner, repo = parse_github_url(github_url)
-        print('owner = {owner}')
+        print("owner = {owner}")
         if validate_owner_repo(owner, repo):
             github_client = initialize_github_client()
             download_loader("GithubRepositoryReader")
